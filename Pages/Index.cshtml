@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Sapalan Windows Web Application - With Kudu Build</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p> Local Project Path: D:\Code\WebApp\spWindowsWebApp\spWindowsWebApp</p>
+    <p> Deployment Method: ZIP </p>
+    <p> Kudu Build: Yes</p>
+    <p style="align-content:start">
+        CLI Command Used:
+
+        az login
+        az account set "sapalan"
+        az webapp deploy --resource-group "WebApps" --name "spWindowsWebApp" -src-path "D:\Code\WebApp\spWindowsWebApp\spWindowsWebApp\package.zip"
+    </p>
+    <p>
+        Attempting with SCM_DO_BUILD_DURING_DEPLOYMENT app settings
+    </p>
+     This is attempt 2. 
+</div>
